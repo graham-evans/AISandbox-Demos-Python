@@ -1,3 +1,5 @@
+import random
+
 from google.protobuf.internal import decoder
 import HighLowCards_pb2 as HighLowCards
 import delimited_protobuf as dp
@@ -25,7 +27,10 @@ while True:
         print("Sending action")
 
         action = HighLowCards.HighLowCardAction()
-        action.action = HighLowCards.HighLowChoice.LOW
+        if (random.randint(0,1)==0):
+            action.action = HighLowCards.HighLowChoice.LOW
+        else:
+            action.action = HighLowCards.HighLowChoice.HIGH
 
         dp.write(stream,action)
         stream.flush()
