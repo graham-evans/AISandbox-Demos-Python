@@ -17,18 +17,18 @@ while True:
 
     # read play state
     state = dp.read(stream, HighLowCards.HighLowCardsState)
-
+    print()
     print("state:")
     print(state)
 
     # send random response
     action = HighLowCards.HighLowCardsAction()
     if (random.randint(0, 1) == 0):
+        print("Sending prediction 'lower'")
         action.action = HighLowCards.HighLowChoice.LOW
     else:
+        print("Sending prediction 'higher'")
         action.action = HighLowCards.HighLowChoice.HIGH
-
-    print("Sending action")
     dp.write(stream, action)
     stream.flush()
 
