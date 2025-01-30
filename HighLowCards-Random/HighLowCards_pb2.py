@@ -24,7 +24,7 @@ _sym_db = _symbol_database.Default()
 
 
 
-DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12HighLowCards.proto\x12\x0chighlowcards\"n\n\x11HighLowCardsState\x12\x11\n\tsessionID\x18\x01 \x01(\t\x12\x11\n\tepisodeID\x18\x02 \x01(\t\x12\x11\n\tcardCount\x18\x03 \x01(\x05\x12\x11\n\tdealtCard\x18\x04 \x03(\t\x12\r\n\x05score\x18\x05 \x01(\x05\"A\n\x12HighLowCardsAction\x12+\n\x06\x61\x63tion\x18\x01 \x01(\x0e\x32\x1b.highlowcards.HighLowChoice\"I\n\x12HighLowCardsReward\x12\r\n\x05score\x18\x03 \x01(\x05\x12$\n\x06signal\x18\x01 \x01(\x0e\x32\x14.highlowcards.Signal*\"\n\rHighLowChoice\x12\x08\n\x04HIGH\x10\x00\x12\x07\n\x03LOW\x10\x01*!\n\x06Signal\x12\x0c\n\x08\x43ONTINUE\x10\x00\x12\t\n\x05RESET\x10\x01\x42\x36\n2dev.aisandbox.server.simulation.highlowcards.protoP\x01\x62\x06proto3')
+DESCRIPTOR = _descriptor_pool.Default().AddSerializedFile(b'\n\x12HighLowCards.proto\x12\x0chighlowcards\"n\n\x11HighLowCardsState\x12\x11\n\tsessionID\x18\x01 \x01(\t\x12\x11\n\tepisodeID\x18\x02 \x01(\t\x12\x11\n\tcardCount\x18\x03 \x01(\x05\x12\x11\n\tdealtCard\x18\x04 \x03(\t\x12\r\n\x05score\x18\x05 \x01(\x05\"g\n\x12HighLowCardsAction\x12+\n\x06\x61\x63tion\x18\x01 \x01(\x0e\x32\x1b.highlowcards.HighLowChoice\x12\x16\n\tdebugNote\x18\x02 \x01(\tH\x00\x88\x01\x01\x42\x0c\n\n_debugNote\"I\n\x12HighLowCardsReward\x12\r\n\x05score\x18\x03 \x01(\x05\x12$\n\x06signal\x18\x01 \x01(\x0e\x32\x14.highlowcards.Signal*\"\n\rHighLowChoice\x12\x08\n\x04HIGH\x10\x00\x12\x07\n\x03LOW\x10\x01*!\n\x06Signal\x12\x0c\n\x08\x43ONTINUE\x10\x00\x12\t\n\x05RESET\x10\x01\x42\x36\n2dev.aisandbox.server.simulation.highlowcards.protoP\x01\x62\x06proto3')
 
 _globals = globals()
 _builder.BuildMessageAndEnumDescriptors(DESCRIPTOR, _globals)
@@ -32,14 +32,14 @@ _builder.BuildTopDescriptorsAndMessages(DESCRIPTOR, 'HighLowCards_pb2', _globals
 if not _descriptor._USE_C_DESCRIPTORS:
   _globals['DESCRIPTOR']._loaded_options = None
   _globals['DESCRIPTOR']._serialized_options = b'\n2dev.aisandbox.server.simulation.highlowcards.protoP\001'
-  _globals['_HIGHLOWCHOICE']._serialized_start=290
-  _globals['_HIGHLOWCHOICE']._serialized_end=324
-  _globals['_SIGNAL']._serialized_start=326
-  _globals['_SIGNAL']._serialized_end=359
+  _globals['_HIGHLOWCHOICE']._serialized_start=328
+  _globals['_HIGHLOWCHOICE']._serialized_end=362
+  _globals['_SIGNAL']._serialized_start=364
+  _globals['_SIGNAL']._serialized_end=397
   _globals['_HIGHLOWCARDSSTATE']._serialized_start=36
   _globals['_HIGHLOWCARDSSTATE']._serialized_end=146
   _globals['_HIGHLOWCARDSACTION']._serialized_start=148
-  _globals['_HIGHLOWCARDSACTION']._serialized_end=213
-  _globals['_HIGHLOWCARDSREWARD']._serialized_start=215
-  _globals['_HIGHLOWCARDSREWARD']._serialized_end=288
+  _globals['_HIGHLOWCARDSACTION']._serialized_end=251
+  _globals['_HIGHLOWCARDSREWARD']._serialized_start=253
+  _globals['_HIGHLOWCARDSREWARD']._serialized_end=326
 # @@protoc_insertion_point(module_scope)
