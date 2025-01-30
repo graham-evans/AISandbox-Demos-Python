@@ -22,7 +22,7 @@ while True:
     print(state)
 
     # send random response
-    action = HighLowCards.HighLowCardAction()
+    action = HighLowCards.HighLowCardsAction()
     if (random.randint(0, 1) == 0):
         action.action = HighLowCards.HighLowChoice.LOW
     else:
@@ -33,4 +33,4 @@ while True:
     stream.flush()
 
     # read result
-    dp.read(stream,HighLowCards.HighLowCardsResult)
+    dp.read(stream,HighLowCards.HighLowCardsReward)
